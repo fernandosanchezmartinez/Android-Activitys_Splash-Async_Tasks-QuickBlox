@@ -1,0 +1,1 @@
+include ':app', ':milibreria', ':quickblox-android-sdk-chat-2.3.3'
