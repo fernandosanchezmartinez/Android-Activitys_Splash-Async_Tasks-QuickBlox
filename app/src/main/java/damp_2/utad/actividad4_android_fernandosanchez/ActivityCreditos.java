@@ -20,31 +20,42 @@ public class ActivityCreditos extends AppCompatActivity implements TaskAdminList
     ImageView imagen1 = null;
     ImageView imagen2 = null ;
 
+    ActivityCreditosUI acui;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_creditos);
 
+        acui = new ActivityCreditosUI(this);
+
+        taskAdmin = new TaskAdmin(10000, 2);
+        taskAdmin.addQTaskAdminListener(this);
+        taskAdmin.startTasks();
+
         imagen1 = (ImageView) findViewById(R.id.androidlogo1);
         imagen2 = (ImageView) findViewById(R.id.cargando);
 
-        taskAdmin = new TaskAdmin(10000, 1);
-        taskAdmin.addQTaskAdminListener(this);
+
 
     }
 
 
     @Override
     public void taskCicloAcabado(int iNumOfCycles) {
-        imagen1.setVisibility(View.GONE);
-        imagen2.setVisibility(View.VISIBLE);
+       // imagen1.setVisibility(View.GONE);
+       // imagen2.setVisibility(View.VISIBLE);
+        runOnUiThread(acui);
     }
 
     @Override
     public void taskTodosCiclosAcabados() {
-        Intent i = new Intent(this, MainActivity.class );
-        startActivity(i);
+       // Intent i = new Intent(this, MainActivity.class );
+      //  startActivity(i);
+       // finish();
+
+        runOnUiThread(acui);
 
     }
 }

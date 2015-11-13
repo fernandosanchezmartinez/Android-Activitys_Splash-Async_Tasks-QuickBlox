@@ -18,7 +18,17 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/img1" />
+                android:id="@+id/androidlogo1"
+                android:visibility="visible"
+                android:background="@drawable/androidlogo1"/>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/cargando"
+                android:visibility="gone"
+                android:background="@drawable/cargando"/>
         </LinearLayout>
 
         <LinearLayout

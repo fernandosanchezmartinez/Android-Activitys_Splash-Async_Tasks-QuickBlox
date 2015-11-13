@@ -93,6 +93,11 @@
     <orderEntry type="library" exported="" name="support-v4-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.1" level="project" />
+    <orderEntry type="module" module-name="quickblox-android-sdk-content-2.3.3" exported="" />
+    <orderEntry type="module" module-name="quickblox-android-sdk-customobjects-2.3.3" exported="" />
+    <orderEntry type="module" module-name="quickblox-android-sdk-chat-2.3.3" exported="" />
+    <orderEntry type="module" module-name="quickblox-android-sdk-core-2.3.3" exported="" />
     <orderEntry type="module" module-name="milibreria" exported="" />
+    <orderEntry type="module" module-name="quickblox-android-sdk-location-2.3.3" exported="" />
   </component>
 </module>

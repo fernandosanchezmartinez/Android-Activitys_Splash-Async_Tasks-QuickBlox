@@ -65,7 +65,7 @@ public class QBAdmin {
     public void cargarTabla(){
 
         QBRequestGetBuilder requestBuilder = new QBRequestGetBuilder();
-        requestBuilder.eq("documentary", "false");
+        requestBuilder.eq("idi", "es");
 
 
         QBCustomObjects.getObjects("TablaAct4Andorid", requestBuilder, new QBEntityCallbackImpl<ArrayList<QBCustomObject>>() {
@@ -75,15 +75,16 @@ public class QBAdmin {
                 ArrayList<QBCustomObject> arlObj = customObjects;
                 //QBCustomObject qbcustmObj = new QBCustomObject();
 
-                for(int i=1; arlObj; i++){
-                    QBCustomObject qbcustmObj = new QBCustomObject();
+                //for(int i=1; arlObj; i++){
+                //    QBCustomObject qbcustmObj = new QBCustomObject();
 
 
-                }
+                //}
 
-                int ids = params.getInt();
-                String idi = params.getString(arlObj.g);
-                String valor = params.getString(valor);
+                //int ids = params.getInt();
+              //  int ids = arlObj.get();
+               // String idi = params.getString(arlObj.g);
+               // String valor = params.getString(valor);
             }
 
             @Override

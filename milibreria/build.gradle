@@ -19,7 +19,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.0.1'
+    compile project(':quickblox-android-sdk-core-2.3.3')
+    compile project(':quickblox-android-sdk-customobjects-2.3.3')
+    compile project(':quickblox-android-sdk-content-2.3.3')
+    compile project(':quickblox-android-sdk-location-2.3.3')
+    compile project(':quickblox-android-sdk-chat-2.3.3')
 }
