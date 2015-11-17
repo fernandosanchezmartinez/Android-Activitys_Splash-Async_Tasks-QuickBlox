@@ -62,29 +62,18 @@ public class QBAdmin {
     });
     }
 
-    public void cargarTabla(){
-
-        QBRequestGetBuilder requestBuilder = new QBRequestGetBuilder();
-        requestBuilder.eq("idi", "es");
+    public void cargarTabla(String nombreTable,QBRequestGetBuilder condiciones){
 
 
-        QBCustomObjects.getObjects("TablaAct4Andorid", requestBuilder, new QBEntityCallbackImpl<ArrayList<QBCustomObject>>() {
+
+
+        QBCustomObjects.getObjects(nombreTable, condiciones, new QBEntityCallbackImpl<ArrayList<QBCustomObject>>() {
             @Override
             public void onSuccess(ArrayList<QBCustomObject> customObjects, Bundle params) {
 
                 ArrayList<QBCustomObject> arlObj = customObjects;
-                //QBCustomObject qbcustmObj = new QBCustomObject();
+                listener.tablacargada(customObjects);
 
-                //for(int i=1; arlObj; i++){
-                //    QBCustomObject qbcustmObj = new QBCustomObject();
-
-
-                //}
-
-                //int ids = params.getInt();
-              //  int ids = arlObj.get();
-               // String idi = params.getString(arlObj.g);
-               // String valor = params.getString(valor);
             }
 
             @Override

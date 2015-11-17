@@ -1,1 +1,1 @@
-include ':app', ':milibreria', ':quickblox-android-sdk-chat-2.3.3'
+include ':app', ':milibreria', ':quickblox-android-sdk-chat-2.3.3', ':quickblox-android-sdk-core-2.3.3', ':quickblox-android-sdk-customobjects-2.3.3', ':quickblox-android-sdk-content-2.3.3', ':quickblox-android-sdk-location-2.3.3'
