@@ -30,7 +30,7 @@ public class ActivityCreditos extends AppCompatActivity implements TaskAdminList
 
         acui = new ActivityCreditosUI(this);
 
-        taskAdmin = new TaskAdmin(10000, 2);
+        taskAdmin = new TaskAdmin(2000, 2);
         taskAdmin.addQTaskAdminListener(this);
         taskAdmin.startTasks();
 
